@@ -1,0 +1,21 @@
+.navIconBtn{
+    background-color: white !important;
+    color: black !important;
+    height: 54px;
+    /* width: 50px !important; */
+    padding: 3px !important;
+    border-radius: 30px !important;
+    border: none;
+    box-shadow: none !important;
+}
+.navIconBtn:hover{
+    background-color: white !important;
+}
+
+.navIconItem{
+    font-size: 30px !important;
+}
+
+.navIconItem:hover{
+    font-size: 35px !important;
+}

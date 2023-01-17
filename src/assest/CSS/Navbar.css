@@ -1,0 +1,27 @@
+
+
+.navArrow::before{
+   background: url('../Images/arrow.svg') center center no-repeat;
+   position: absolute;
+   height: 8px;
+   width: 110px;
+   background-size: contain;
+   content: "";
+   margin-top: 7px;
+}
+.navDiscover{
+    position: relative;
+    top: 0;
+    left: 150px;
+    font-weight: 400;
+    color: white;
+    /* display: none; */
+    visibility: hidden;
+    transition: left 1.5s linear !important;
+}
+
+.NavHeroSection:hover .navDiscover{
+    visibility: visible;
+    left: 110px;
+}
+

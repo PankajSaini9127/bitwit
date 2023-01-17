@@ -1,0 +1,99 @@
+.navArrow::before{
+    background: url('../Images/arrow.svg') center center no-repeat;
+    position: absolute;
+    height: 8px;
+    width: 110px;
+    background-size: contain;
+    content: "";
+    margin-top: 7px;
+ }
+
+
+ .navDiscover{
+    position: relative;
+    top: 0;
+    left: 160px;
+    font-weight: 400;
+    color: white;
+    /* display: none; */
+    visibility: hidden;
+    transition: left 2s linear !important;
+}
+
+.NavHeroSection:hover .navDiscover{
+    visibility: visible;
+    left: 115px;
+}
+
+.NavBtnLeftScroll{
+    color: white;
+    font-weight: 500;
+    height: 48px !important;
+    border: 2px solid rgba(255,255,255,0.29) !important;
+    border-radius: 50% !important;
+    width: 48px !important;
+    z-index: 1;
+    position: absolute;
+    /* bottom: 5vh;
+    left: 7vh; */
+}
+
+.NavBtnLeftScroll::before {
+    width: 60px;
+    height: 8px;
+    background: url(../Images/arrow-2.svg) left center no-repeat;
+    background-size: cover;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    margin-top: -4px;
+    transition: all 0.2s linear !important;
+}
+
+
+.rightScrollBtn::before{
+    transform: rotate(180deg);
+    left: -25px;
+}
+
+
+.scrollToExplore{
+    height: 30px;
+    width: 30px;
+    border: 2px solid rgba(255,255,255,0.29);
+    border-radius: 25px; 
+    position: relative;
+    top: -30px;
+    color: white;
+    display: grid;
+    place-items: center;
+    left: 200px;
+    animation: scrollanim 0.7s linear  infinite ;
+}
+
+
+
+@keyframes scrollanim {
+from{height: 30px;}
+to{height: 40px;}
+}
+
+
+@media screen and (max-width:900px) and (min-width:451px) {
+    .navWrappper{
+        height: 600px !important;
+    }
+    .navContentBG{
+        height: 400px !important;
+        width: 500px !important;
+    }
+    .NavHeroSection{
+        width: 500px !important;
+        left: -30%;
+        padding-left:100px !important;
+    }
+    .navBtnMobile{
+        font-size: 20px !important;
+    }
+}

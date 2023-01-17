@@ -1,0 +1,17 @@
+.projectBtn{
+    visibility: hidden;
+    transition: left 1s linear !important;
+}
+
+.ProjectSection:hover .projectBtn{
+    visibility: visible;
+    left: 110px;
+}
+
+@media screen and (max-width:900px) and (min-width:451px) {
+    .projectBtnMobile{
+        font-size: 25px !important;
+        margin-top: 15px !important;
+        margin-bottom: 15px !important ;
+    }
+}

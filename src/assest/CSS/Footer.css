@@ -1,0 +1,29 @@
+.footerBtn{
+    /* display: none; */
+    visibility: hidden;
+    transition: left 1s linear !important;
+   
+}
+.FooterArrow::before{
+    background: url('../Images/arrow.svg') center center no-repeat;
+    position: absolute;
+    height: 8px;
+    width: 110px;
+    background-size: contain;
+    content: "";
+    margin-top: 7px;
+ }
+
+.footer:hover  .footerBtn{
+    /* display: block; */
+    visibility: visible;
+    left: 110px;
+}
+
+
+@media  screen and (max-width:900px) and (min-width:451px) {
+    .footer{
+        text-align: center;
+    }
+
+}
